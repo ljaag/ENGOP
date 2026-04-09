@@ -1,0 +1,94 @@
+function [x_opt, history] = custom_penalty_gradient_descent_advanced(obj_wrapper, x0, lb, ub)
+    % --- Algorithm Parameters ---
+    max_outer_iter = 15;     % Penalty updates
+    max_inner_iter = 100;    % Gradient descent steps per penalty
+    delta = 1e-5;            % Finite difference step (in SCALED space)
+    R = 10;                  % Initial Penalty factor
+    penalty_multiplier = 5;  % How much R grows each outer loop [cite: 28]
+   
+    num_vars = length(x0);
+    history.x = []; history.f = []; history.alpha = [];
+   
+    % --- 1. Initial Variable Scaling ---
+    % Scale the initial guess x0 to be between 0 and 1
+    x_scaled = (x0 - lb) ./ (ub - lb);
+   
+    % Anonymous function to unscale variables for the physical simulation
+    unscale = @(x_s) x_s .* (ub - lb) + lb;
+    iter = 0;
+    for outer = 1:max_outer_iter
+        % Reset alpha at the start of each new penalty landscape
+        alpha = 1.0;
+       
+        for inner = 1:max_inner_iter
+            % 2. Unscale and evaluate current Penalty Function
+            x_current = unscale(x_scaled);
+            [J, c, ceq] = obj_wrapper(x_current);
+            P_current = J + R * sum(max(0, c).^2) + R * sum(ceq.^2);
+           
+            % Store history
+            history.x = [history.x; x_current];
+            history.f = [history.f; P_current];
+            history.alpha = [history.alpha; alpha];
+           
+            % 3. Calculate Gradient in SCALED space using Finite Differences
+            grad_scaled = zeros(1, num_vars);
+            for i = 1:num_vars
+                x_s_forward = x_scaled;
+                x_s_forward(i) = x_s_forward(i) + delta;
+               
+                % Unscale forward step to evaluate
+                x_forward = unscale(x_s_forward);
+                [J_fw, c_fw, ceq_fw] = obj_wrapper(x_forward);
+                P_forward = J_fw + R * sum(max(0, c_fw).^2) + R * sum(ceq_fw.^2);
+               
+                grad_scaled(i) = (P_forward - P_current) / delta;
+            end
+           
+            % 4. Adaptive Step Size (Backtracking Line Search)
+            alpha_test = alpha;
+            step_accepted = false;
+           
+            while ~step_accepted && alpha_test > 1e-6
+                % Propose a new step
+                x_s_test = x_scaled - alpha_test * grad_scaled;
+               
+                % Enforce scaled bounds [0, 1] immediately
+                x_s_test = max(0, min(1, x_s_test));
+               
+                % Unscale and test the new penalty value
+                x_test = unscale(x_s_test);
+                [J_test, c_test, ceq_test] = obj_wrapper(x_test);
+                P_test = J_test + R * sum(max(0, c_test).^2) + R * sum(ceq_test.^2);
+               
+                if P_test < P_current
+                    % Step is good! It goes downhill.
+                    step_accepted = true;
+                else
+                    % Step overshot the valley. Cut alpha in half and retry.
+                    alpha_test = alpha_test * 0.5;
+                end
+            end
+           
+            % 5. Apply the successful update
+            if step_accepted
+                x_scaled = max(0, min(1, x_scaled - alpha_test * grad_scaled));
+                % Marginally increase alpha for the next iteration to speed up if terrain is flat
+                alpha = alpha_test * 1.2;
+            else
+                % If we couldn't find a downhill step even with tiny alpha, we are at the minimum
+                break;
+            end
+           
+            % Convergence check based on actual physical change
+            if norm(unscale(x_scaled) - x_current) < 1e-6
+                break;
+            end
+        end
+        % Increase penalty factor to enforce constraints strictly
+        R = R * penalty_multiplier;
+    end
+   
+    % Final unscaling for the output
+    x_opt = unscale(x_scaled);
+end
