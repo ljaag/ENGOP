@@ -1,0 +1,44 @@
+function J = blade_objective(state)
+%==========================================================================
+% BLADE_OBJECTIVE
+% Calculates the primary objective cost based on the physics state.
+%==========================================================================
+    % -->Minimize energy and penalize deflection <--
+    J = -1 * state.energy + 1000 * state.total_deflection;
+
+    % --> Maximize energy and Minimize separate deflection in x and y <--
+    % Deflection_Multiplier = 8e4; % Balance between deflection and stiffness
+    % 
+    % alpha_weight = 0.5;  % 0 <-- y direction min defl
+    %                      % 1 <-- x direction min defl
+    % 
+    % weighted_deflection = (alpha_weight * state.def_x)^2 + ((1 - alpha_weight) * state.def_y)^2;
+    % 
+    % J = -1 * state.energy + Deflection_Multiplier * weighted_deflection;
+    % disp(state.mass)
+
+    % --> Maximize ratio, of energy to mass <--
+
+    %J = -1 * (state.energy / state.mass);
+    %disp(state.total_deflection)
+
+end
+
+
+
+% -->Minimize energy and penalize deflection <--
+%J = -1 * state.energy + 1000 * state.total_deflection;
+
+% --> Maximize energy and minimize separate deflection in x and y <--
+% Deflection_Multiplier = 8e4; % Balance between deflection and stiffness
+% 
+% alpha_weight = 0.5;  % 0 <-- y direction min defl
+%                      % 1 <-- x direction min defl
+% 
+% weighted_deflection = (alpha_weight * state.def_x)^2 + ((1 - alpha_weight) * state.def_y)^2;
+% 
+% J = -1 * state.energy + Deflection_Multiplier * weighted_deflection;
+% disp(state.mass)
+
+
+
