@@ -42,10 +42,6 @@ function [x_opt, history] = damped_bfgs(physics_fun, obj_fun, con_fun, x0, lb, u
         history.x(iter, :) = unscale(x_scaled)';
         history.f(iter) = f_current;
        
-        current_x = unscale(x_scaled)';
-        
-
-
 
         fprintf('Iter: %3d | Penalized Obj: %.6e\n', iter, f_current);
         current_x = unscale(x_scaled)';
@@ -74,7 +70,14 @@ function [x_opt, history] = damped_bfgs(physics_fun, obj_fun, con_fun, x0, lb, u
                 alpha = alpha * 0.5;
             end
         end
-       
+        
+        % Break if line search fails to find valid step
+        if ~step_accepted
+            fprintf(2,'Line search failed at iter %d. Interrupting...\n', iter)
+            break;
+        end
+
+
         % Apply step
         x_new = max(0, min(1, x_scaled + alpha * p));
        

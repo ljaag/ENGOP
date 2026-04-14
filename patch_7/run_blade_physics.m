@@ -32,6 +32,7 @@ function state = run_blade_physics(x, params_base, mode)
     state.max_actual_stress = max(stress_data.sigma_max);
     state.stress_variance = var(stress_data.sigma_max);
     state.L1 = params.L1;
+    state.H_req = params.H_req;
 
     % Clearance constraint
     state.thicknesses = params.t;
@@ -43,4 +44,5 @@ function state = run_blade_physics(x, params_base, mode)
     % Horizontal bound constraints
     state.max_x = max(bx);
     state.min_x = min(bx);
+    state.max_y = max(by);
 end

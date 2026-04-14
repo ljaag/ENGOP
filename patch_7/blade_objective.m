@@ -1,10 +1,16 @@
 function J = blade_objective(state)
 %==========================================================================
-% BLADE_OBJECTIVE: Specific energy
+% BLADE_OBJECTIVE: Stiffness
 %==========================================================================
 
-% Maximize specific energy (Energy / Mass) by minimizing its negative
-    J = -(state.energy / state.mass);
+    % W1 and W2 are arbitrary weights 
+    % Multiply the deflection difference by a large number because
+    % deflection values are small (meters) and mass is around 1-2 kg.
+    W1 = 1e5;
+    W2 = 1.0;
+
+    % Squared error from target deflection (0.10m) + Mass penalty
+    J = W1 * (state.total_deflection - 0.10)^2 + W2 * state.mass;
 
 
 end

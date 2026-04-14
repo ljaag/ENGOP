@@ -1,11 +1,11 @@
 function c = blade_constraints(state)
 %==========================================================================
-% BLADE_CONSTRAINTS: Specific energy
+% BLADE_CONSTRAINTS: Stiffness
 %==========================================================================
 
-    c(1) = (state.max_actual_stress / 600e6) - 1;  % Stress <= 600 MPa
-    c(2) = (state.total_deflection / 0.12) - 1;    % Deflection <= 0.12 m
-    c(3) = 0.01 - state.L1;                        % L1 >= 0.01
+% Standard safety limits
+    c(1) = (state.max_actual_stress / 500e6) - 1; % Stress <= 500 MPa
+    c(2) = 0.01 - state.L1;                       % L1 >= 0.01
     
 
 
@@ -14,13 +14,22 @@ function c = blade_constraints(state)
     % Basic COnstraints   -> Always
     %-------------------
     % Positive theta 5
-    c(3) = -state.theta5/90;
+    c(3) = -state.theta5 / 90;
+
+    % Minimum L1 length
+    minL1 = 0.025;
+    c(4) =(minL1-state.L1) / minL1;
     
-    % x axis limits
-    ext_x_max = 0.3;
-    ext_x_min = -0.3;
-    c(4) = (state.max_x - ext_x_max)/ext_x_max;
-    c(5) = (ext_x_min - state.min_x)/ext_x_min;
+    % "x" limits
+    ext_x_max = 0.4;
+    ext_x_min = -0.4;
+    c(5) = (state.max_x - ext_x_max) / ext_x_max;
+    c(6) = (ext_x_min - state.min_x) / abs(ext_x_min);
+
+    % "y" limits
+    c(7) = (state.max_y - state.H_req)/ state.H_req; % top
+    min_req_clearance = 0.02;
+    c(8) = (min_req_clearance - state.min_clearance) / min_req_clearance;
 
 end
 
