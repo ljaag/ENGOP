@@ -1,0 +1,20 @@
+======================================================
+--- Running GA simplified ---
+
+Single objective optimization:
+2 Variables
+9 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+    1            999       3.50508        1.006      0
+Optimization finished: no feasible point found.
+GA Optimization finished in 350.57 seconds.
+GA Optimized thickness (t): 0.015
+GA Optimized Radius 4 (R4): 0.15
