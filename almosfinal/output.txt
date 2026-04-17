@@ -1,0 +1,551 @@
+======================================================
+--- Running Simple Geometry ---
+Iter:   1 | Penalized Obj: 7.708938e+00
+Iter:   2 | Penalized Obj: -1.699964e-01
+Iter:   3 | Penalized Obj: -1.716488e-01
+Iter:   4 | Penalized Obj: -1.814421e-01
+Iter:   5 | Penalized Obj: -2.293822e-01
+Iter:   6 | Penalized Obj: -2.294651e-01
+Iter:   7 | Penalized Obj: -2.294755e-01
+Iter:   8 | Penalized Obj: -2.294755e-01
+Converged successfully at iteration 8.
+Elapsed time is 16.632047 seconds.
+Optimized thickness (t): 0.02
+Optimized Radius 4 (R4): 0.14031
+======================================================
+--- Running Full Geometry ---
+Iter:   1 | Penalized Obj: -6.124145e-03
+30
+Iter:   2 | Penalized Obj: -6.928011e-02
+31.5865
+Iter:   3 | Penalized Obj: -7.712240e-02
+31.9263
+Iter:   4 | Penalized Obj: -8.337169e-02
+32.2665
+Iter:   5 | Penalized Obj: -8.501747e-02
+32.3553
+Iter:   6 | Penalized Obj: -8.653895e-02
+32.4445
+Iter:   7 | Penalized Obj: -8.671540e-02
+32.4605
+Iter:   8 | Penalized Obj: -5.178809e-01
+34.2137
+Iter:   9 | Penalized Obj: -7.387385e-01
+34.7931
+Iter:  10 | Penalized Obj: -8.039051e-01
+34.9425
+Iter:  11 | Penalized Obj: -9.474021e-01
+35.243
+Iter:  12 | Penalized Obj: -9.824551e-01
+35.3188
+Iter:  13 | Penalized Obj: -9.838393e-01
+35.3257
+Iter:  14 | Penalized Obj: -9.965153e-01
+34.1416
+Iter:  15 | Penalized Obj: -9.974704e-01
+34.0846
+Iter:  16 | Penalized Obj: -1.767737e+00
+24.4754
+Iter:  17 | Penalized Obj: -2.276918e+00
+20.8692
+Iter:  18 | Penalized Obj: -2.483951e+00
+18.9114
+Iter:  19 | Penalized Obj: -2.773706e+00
+33.6314
+Iter:  20 | Penalized Obj: -3.000865e+00
+40.9341
+Iter:  21 | Penalized Obj: -3.195370e+00
+42.8004
+Iter:  22 | Penalized Obj: -3.238305e+00
+43.6271
+Iter:  23 | Penalized Obj: -3.413301e+00
+44.1167
+Iter:  24 | Penalized Obj: -3.793263e+00
+45.0021
+Iter:  25 | Penalized Obj: -3.881115e+00
+45.0284
+Iter:  26 | Penalized Obj: -4.376920e+00
+44.0967
+Iter:  27 | Penalized Obj: -4.383096e+00
+44.0374
+Iter:  28 | Penalized Obj: -4.428857e+00
+44.2265
+Iter:  29 | Penalized Obj: -4.471036e+00
+44.4678
+Iter:  30 | Penalized Obj: -4.506576e+00
+44.9743
+Iter:  31 | Penalized Obj: -4.565000e+00
+46.9324
+Iter:  32 | Penalized Obj: -4.579253e+00
+47.3177
+Iter:  33 | Penalized Obj: -4.585089e+00
+47.5796
+Iter:  34 | Penalized Obj: -4.585391e+00
+47.7985
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  35 | Penalized Obj: -4.588891e+00
+47.7842
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  36 | Penalized Obj: -4.588197e+00
+47.7699
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  37 | Penalized Obj: -4.587503e+00
+47.756
+Iter:  38 | Penalized Obj: -4.591433e+00
+47.7579
+Iter:  39 | Penalized Obj: -4.592635e+00
+47.7662
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  40 | Penalized Obj: -4.591660e+00
+47.7518
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  41 | Penalized Obj: -4.590722e+00
+47.7376
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  42 | Penalized Obj: -4.589806e+00
+47.7243
+Iter:  43 | Penalized Obj: -4.590518e+00
+47.7506
+Iter:  44 | Penalized Obj: -4.842039e+00
+52.7869
+Iter:  45 | Penalized Obj: -4.852159e+00
+52.8011
+Iter:  46 | Penalized Obj: -4.856347e+00
+52.9091
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  47 | Penalized Obj: -4.855407e+00
+52.8953
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  48 | Penalized Obj: -4.854501e+00
+52.8829
+Iter:  49 | Penalized Obj: -4.856022e+00
+52.9068
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  50 | Penalized Obj: -4.854904e+00
+52.8927
+Iter:  51 | Penalized Obj: -4.854988e+00
+52.8979
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  52 | Penalized Obj: -4.853970e+00
+52.884
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  53 | Penalized Obj: -4.852979e+00
+52.8715
+Iter:  54 | Penalized Obj: -4.853092e+00
+52.9358
+Iter:  55 | Penalized Obj: -4.853432e+00
+53.012
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  56 | Penalized Obj: -4.853251e+00
+53.0086
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  57 | Penalized Obj: 2.481372e-03
+52.9937
+Iter:  58 | Penalized Obj: -4.687042e+00
+50.0946
+Iter:  59 | Penalized Obj: -4.741589e+00
+50.0915
+Iter:  60 | Penalized Obj: -4.881222e+00
+50.6858
+Iter:  61 | Penalized Obj: -4.944822e+00
+50.8748
+Iter:  62 | Penalized Obj: -5.013778e+00
+50.9319
+Iter:  63 | Penalized Obj: -5.054574e+00
+51.0637
+Iter:  64 | Penalized Obj: -5.336303e+00
+51.7525
+Iter:  65 | Penalized Obj: -5.441170e+00
+50.5022
+Iter:  66 | Penalized Obj: -5.489427e+00
+50.791
+Iter:  67 | Penalized Obj: -5.489586e+00
+50.5306
+Iter:  68 | Penalized Obj: -5.640760e+00
+50.379
+Iter:  69 | Penalized Obj: -5.645330e+00
+50.3526
+Iter:  70 | Penalized Obj: -5.662899e+00
+50.2161
+Iter:  71 | Penalized Obj: -5.669933e+00
+50.1135
+Iter:  72 | Penalized Obj: -5.673195e+00
+50.1259
+Iter:  73 | Penalized Obj: -5.673239e+00
+50.1946
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  74 | Penalized Obj: -5.675390e+00
+50.2093
+Iter:  75 | Penalized Obj: -5.675559e+00
+50.2245
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  76 | Penalized Obj: -5.676945e+00
+50.24
+Iter:  77 | Penalized Obj: -5.677303e+00
+50.2706
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  78 | Penalized Obj: -5.679016e+00
+50.2861
+Iter:  79 | Penalized Obj: -5.679287e+00
+50.3488
+Iter:  80 | Penalized Obj: -5.685331e+00
+51.2983
+Iter:  81 | Penalized Obj: -5.685872e+00
+51.4182
+Iter:  82 | Penalized Obj: -5.690904e+00
+51.9761
+Iter:  83 | Penalized Obj: -5.717212e+00
+53.1523
+Iter:  84 | Penalized Obj: -5.730072e+00
+53.7318
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  85 | Penalized Obj: -5.731407e+00
+53.7445
+Iter:  86 | Penalized Obj: -5.779581e+00
+54.0887
+Iter:  87 | Penalized Obj: -5.844782e+00
+54.1959
+Iter:  88 | Penalized Obj: -5.854689e+00
+54.2366
+Iter:  89 | Penalized Obj: -5.856573e+00
+54.4365
+Iter:  90 | Penalized Obj: -5.856817e+00
+54.5307
+Iter:  91 | Penalized Obj: -5.856825e+00
+54.578
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  92 | Penalized Obj: -5.859046e+00
+54.586
+Iter:  93 | Penalized Obj: -5.864190e+00
+54.5622
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  94 | Penalized Obj: -5.865512e+00
+54.5737
+Iter:  95 | Penalized Obj: -5.867840e+00
+54.6432
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter:  96 | Penalized Obj: -5.868644e+00
+54.6553
+Iter:  97 | Penalized Obj: -5.874403e+00
+54.648
+Iter:  98 | Penalized Obj: -5.874564e+00
+54.6619
+Iter:  99 | Penalized Obj: -5.874702e+00
+54.6601
+Iter: 100 | Penalized Obj: -5.874717e+00
+54.6585
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 101 | Penalized Obj: -5.875354e+00
+54.6709
+Iter: 102 | Penalized Obj: -5.878068e+00
+54.6746
+Iter: 103 | Penalized Obj: -5.880842e+00
+54.7117
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 104 | Penalized Obj: -5.878103e+00
+54.7248
+Iter: 105 | Penalized Obj: -5.879070e+00
+54.7451
+Iter: 106 | Penalized Obj: -5.879207e+00
+54.7549
+Iter: 107 | Penalized Obj: -5.881226e+00
+54.7725
+Iter: 108 | Penalized Obj: -5.899501e+00
+55.1216
+Iter: 109 | Penalized Obj: -5.966125e+00
+56.6277
+Iter: 110 | Penalized Obj: -5.985615e+00
+56.7477
+Iter: 111 | Penalized Obj: -5.988288e+00
+56.8114
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 112 | Penalized Obj: -5.994434e+00
+56.8244
+Iter: 113 | Penalized Obj: -6.011794e+00
+56.8475
+Iter: 114 | Penalized Obj: -6.035244e+00
+57.0456
+Iter: 115 | Penalized Obj: -6.101140e+00
+57.4781
+Iter: 116 | Penalized Obj: -6.106585e+00
+57.5328
+Iter: 117 | Penalized Obj: -6.120708e+00
+57.8599
+Iter: 118 | Penalized Obj: -6.162562e+00
+57.9769
+Iter: 119 | Penalized Obj: -6.162691e+00
+58.1873
+Iter: 120 | Penalized Obj: -6.185939e+00
+59.2698
+Iter: 121 | Penalized Obj: -6.187565e+00
+59.5814
+Iter: 122 | Penalized Obj: -6.198721e+00
+64.8675
+Iter: 123 | Penalized Obj: -6.399525e+00
+64.8737
+Iter: 124 | Penalized Obj: -6.405762e+00
+64.961
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 125 | Penalized Obj: -6.406411e+00
+64.9611
+Iter: 126 | Penalized Obj: -6.407911e+00
+64.9681
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 127 | Penalized Obj: -6.408626e+00
+64.9681
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 128 | Penalized Obj: -6.409206e+00
+64.9682
+Iter: 129 | Penalized Obj: -6.410579e+00
+64.9795
+Iter: 130 | Penalized Obj: -6.528805e+00
+66.49
+Iter: 131 | Penalized Obj: -6.564696e+00
+66.7727
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 132 | Penalized Obj: -6.569317e+00
+66.7675
+Iter: 133 | Penalized Obj: -6.573366e+00
+66.7509
+Iter: 134 | Penalized Obj: -6.580436e+00
+66.8034
+Iter: 135 | Penalized Obj: -6.583300e+00
+67.8247
+Iter: 136 | Penalized Obj: -6.611878e+00
+68.8604
+Iter: 137 | Penalized Obj: -6.804785e+00
+76.0754
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 138 | Penalized Obj: -6.801840e+00
+76.0755
+Iter: 139 | Penalized Obj: -6.813454e+00
+76.131
+Iter: 140 | Penalized Obj: -6.833178e+00
+76.1981
+Iter: 141 | Penalized Obj: -6.844388e+00
+76.4411
+Iter: 142 | Penalized Obj: -6.855636e+00
+76.877
+Iter: 143 | Penalized Obj: -6.858271e+00
+76.9862
+Iter: 144 | Penalized Obj: -6.858385e+00
+77.0135
+Iter: 145 | Penalized Obj: -6.871580e+00
+76.3396
+Iter: 146 | Penalized Obj: -6.891933e+00
+74.3165
+Iter: 147 | Penalized Obj: -6.926303e+00
+72.6918
+Iter: 148 | Penalized Obj: -6.941138e+00
+72.5578
+Iter: 149 | Penalized Obj: -6.980509e+00
+80.3673
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 150 | Penalized Obj: -6.982170e+00
+80.3652
+Iter: 151 | Penalized Obj: -6.982192e+00
+80.3648
+Iter: 152 | Penalized Obj: -6.990214e+00
+80.468
+Iter: 153 | Penalized Obj: -6.993729e+00
+80.7393
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.331038e-16. 
+> In damped_bfgs (line 71)
+In main_bgfs (line 122)
+ 
+Iter: 154 | Penalized Obj: -6.993730e+00
+80.7436
+Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.331038e-16. 
+> In damped_bfgs (line 71)
+In main_bgfs (line 122)
+ 
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 155 | Penalized Obj: -6.993522e+00
+80.7434
+Iter: 156 | Penalized Obj: -6.996222e+00
+80.7265
+Iter: 157 | Penalized Obj: -6.999090e+00
+81.5929
+Iter: 158 | Penalized Obj: -7.002788e+00
+81.7272
+Iter: 159 | Penalized Obj: -7.005004e+00
+82.0445
+Iter: 160 | Penalized Obj: -7.005395e+00
+84.0074
+Iter: 161 | Penalized Obj: -7.006488e+00
+85.0888
+Iter: 162 | Penalized Obj: -7.007868e+00
+87.2335
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 163 | Penalized Obj: -7.012986e+00
+87.2335
+Iter: 164 | Penalized Obj: -7.014402e+00
+87.2378
+Iter: 165 | Penalized Obj: -7.014460e+00
+87.1865
+Iter: 166 | Penalized Obj: -7.014566e+00
+87.1636
+Iter: 167 | Penalized Obj: -7.014584e+00
+87.1582
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 168 | Penalized Obj: -7.014564e+00
+87.1582
+Iter: 169 | Penalized Obj: -7.014566e+00
+87.1774
+Iter: 170 | Penalized Obj: -7.015190e+00
+87.2993
+Iter: 171 | Penalized Obj: -7.017211e+00
+87.5122
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 172 | Penalized Obj: -7.017391e+00
+87.5121
+Iter: 173 | Penalized Obj: -7.017399e+00
+87.5115
+Iter: 174 | Penalized Obj: -7.017430e+00
+87.9566
+Iter: 175 | Penalized Obj: -7.026189e+00
+89.0475
+Iter: 176 | Penalized Obj: -7.029365e+00
+90.0637
+Iter: 177 | Penalized Obj: -7.030317e+00
+89.9966
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 178 | Penalized Obj: -7.030688e+00
+89.9963
+Iter: 179 | Penalized Obj: -7.030936e+00
+89.7271
+Iter: 180 | Penalized Obj: -7.030942e+00
+89.7244
+Iter: 181 | Penalized Obj: -7.031063e+00
+89.947
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 182 | Penalized Obj: -7.031201e+00
+89.947
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 183 | Penalized Obj: -7.031211e+00
+89.947
+Iter: 184 | Penalized Obj: -7.031217e+00
+89.9489
+Iter: 185 | Penalized Obj: -7.031220e+00
+89.9823
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 186 | Penalized Obj: -7.031230e+00
+89.9824
+Iter: 187 | Penalized Obj: -7.031243e+00
+89.9831
+Iter: 188 | Penalized Obj: -7.031249e+00
+90.0545
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 189 | Penalized Obj: -7.031202e+00
+90.0545
+Iter: 190 | Penalized Obj: -7.031233e+00
+90.0473
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 191 | Penalized Obj: -7.031244e+00
+90.0362
+Iter: 192 | Penalized Obj: -7.031245e+00
+90.0246
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 193 | Penalized Obj: -7.031200e+00
+90.0206
+Iter: 194 | Penalized Obj: -7.031239e+00
+89.7778
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 195 | Penalized Obj: -7.031237e+00
+89.7778
+Iter: 196 | Penalized Obj: -7.031238e+00
+89.7778
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 197 | Penalized Obj: -7.031238e+00
+89.7778
+Iter: 198 | Penalized Obj: -7.031239e+00
+89.7777
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 199 | Penalized Obj: -7.031236e+00
+89.7777
+Iter: 200 | Penalized Obj: -7.031239e+00
+89.7775
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 201 | Penalized Obj: -7.031238e+00
+89.7774
+Iter: 202 | Penalized Obj: -7.031239e+00
+89.7772
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 203 | Penalized Obj: -7.031237e+00
+89.7771
+Iter: 204 | Penalized Obj: -7.031239e+00
+89.7765
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 205 | Penalized Obj: -7.031233e+00
+89.7763
+Iter: 206 | Penalized Obj: -7.031237e+00
+89.7752
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 207 | Penalized Obj: -7.031203e+00
+89.7748
+Iter: 208 | Penalized Obj: -7.031229e+00
+89.7574
+  -> Line search exhausted. Taking tiny gradient fallback step.
+Iter: 209 | Penalized Obj: -7.031211e+00
+89.7572
+Exit: Change < 0.10% over 35 iterations.
+Elapsed time is 2102.483356 seconds.
+Optimized thicknesses (t): \n0.019049    0.061757   0.0062961    0.024412    0.079998    0.079998        0.08
+Optimized Radius 4 (R4): \n0.239504     0.339019     0.130081         0.02     0.122683     0.322243     -97.9353      98.2427
+======================================================
+--- Running GA simplified ---
+
+Single objective optimization:
+2 Variables
+8 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+    1            991     -0.201304            0      0
+    2           1962     -0.229461            0      0
+    3           2933     -0.229475            0      0
+Optimization finished: average change in the fitness value less than options.FunctionTolerance and constraint violation is less than options.ConstraintTolerance.
+GA Optimization finished in 143.38 seconds.
+GA Optimized thickness (t): 0.02
+GA Optimized Radius 4 (R4): 0.14036
+======================================================
+--- Running GA Full ---
+
+Single objective optimization:
+15 Variables
+8 Nonlinear inequality constraints
+
+Options:
+CreationFcn:       @gacreationuniform
+CrossoverFcn:      @crossoverscattered
+SelectionFcn:      @selectionstochunif
+MutationFcn:       @mutationadaptfeasible
+
+                              Best       Max        Stall
+Generation  Func-count        f(x)     Constraint  Generations
+    1           4040      -2.99029            0      0
+    2          11040      -7.03113            0      0
+    3          15000      -7.03125            0      0
+Optimization finished: average change in the fitness value less than options.FunctionTolerance and constraint violation is less than options.ConstraintTolerance.
+GA Optimization finished in 1689.64 seconds.
+GA Optimized thickness (t): 0.038526
+GA Optimized Radius 4 (R4): 0.016586
+>> 1689.64/60
+
+ans =
+
+   28.1607
+
+>> 2102/60
+
+ans =
+
+   35.0333
+
+>> 
